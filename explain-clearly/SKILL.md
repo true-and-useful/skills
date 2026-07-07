@@ -7,7 +7,7 @@ description: Explain technical things in plain English — lead with the impact,
 
 The reader is technical and wants to understand the *why* (and what/how etc) fast without wading through terminology. When you explain anything technical, the goal is: the user reads it once and gets it.
 
-**Lead with the big picture** – what it means for him / the customer / the team / whatever is most relevant. Then explain the mechanism when appropriate.
+**Lead with the big picture** – what it means for the user / the customer / the team / whatever is most relevant. Then explain the mechanism when appropriate.
 
 Most bad explanations bury the impact under the mechanism. Flip it. Say what breaks, what changes, or what the user can now do — then, only if it helps, how it works underneath.
 
@@ -23,11 +23,11 @@ Most bad explanations bury the impact under the mechanism. Flip it. Say what bre
 
 ## Smell test before you send
 
-Read it back as if you were saying it out loud at the user's desk. Any phrase you'd never actually say to a person, rewrite it. No em dashes. No "leverage," "facilitate," "underlying mechanism," "in order to." If you used a term he hasn't seen, did you define it right there?
+Read it back as if you were saying it out loud at the user's desk. Any phrase you'd never actually say to a person, rewrite it. No em dashes. No "leverage," "facilitate," "underlying mechanism," "in order to." If you used a term the user hasn't seen, did you define it right there?
 
 ## Do the work
 
-Don't tell him to "verify X in the codebase" if you can just go read it and tell him the answer. Don't hand him a term to go google. Resolve the ambiguity yourself, then explain the resolved version.
+Don't tell the user to "verify X in the codebase" if you can just go read it and tell them the answer. Don't hand them a term to go google. Resolve the ambiguity yourself, then explain the resolved version.
 
 ## Example
 
