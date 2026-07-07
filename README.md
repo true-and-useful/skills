@@ -1,7 +1,5 @@
 # Skills
 
-A small collection of [Claude](https://claude.com) skills by true-and-useful.
-
 A skill is a folder with a `SKILL.md` file in it. The front matter (`name` and
 `description`) tells Claude what the skill does and when to reach for it; the
 body is the instructions Claude follows once the skill fires.
@@ -14,20 +12,13 @@ body is the instructions Claude follows once the skill fires.
 
 ## Installing a skill
 
-Copy the skill's folder into one of the places Claude looks for skills.
-
-**Claude Code — for one project** (only that project sees it):
-
-```
-mkdir -p .claude/skills
-cp -R explain-clearly .claude/skills/
-```
-
-**Claude Code — for every project** (available everywhere on your machine):
+Put the skill's folder in `~/.agents/skills`, then symlink it into
+`~/.claude/skills` so Claude discovers it:
 
 ```
-mkdir -p ~/.claude/skills
-cp -R explain-clearly ~/.claude/skills/
+mkdir -p ~/.agents/skills ~/.claude/skills
+cp -R explain-clearly ~/.agents/skills/
+ln -s ~/.agents/skills/explain-clearly ~/.claude/skills/explain-clearly
 ```
 
 The folder name and the `name` in the front matter should match. Claude
